@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.AddEditActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/borrower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/borrower"
+        android:textSize="24sp"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/currency_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="4dp"
+        android:inputType="text"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/default_amount"
+        android:textSize="24sp"
+        android:inputType="numberDecimal"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reason"
+        android:textSize="24sp"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="dd-MM-yyyy"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
